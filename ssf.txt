@@ -4,7 +4,7 @@
 
 005,268
 1941,1046
-1942,640
+1942,10
 1943,70
 1943kai,72
 1944,687
@@ -56,7 +56,7 @@ aircomb,890|848
 aircombj,645|547
 airduel,29
 airraid,102
-airwolf,614
+airwolf,162
 ajax,450
 akiss,42
 alexkidd,13
@@ -89,7 +89,7 @@ aof3,243
 apache3,537
 apb,572
 apparel,485
-appoooh,638
+appoooh,16
 aquajack,123
 aquarium,167
 aquarush,551
@@ -1111,7 +1111,7 @@ intrepid,319
 introdon,1454
 inufuku,692
 invad2ct,18
-invaders,633
+invaders,16
 invadpt2,20
 invds,55|180
 invho2,349
