@@ -22,7 +22,7 @@ For entries fixed by several commits and that have a Discussion/Issue/BYOAC thre
 
 ### Changed
 
-- Updated values in ssf.txt. ____% checked. (____ of 2927)
+- Updated values in ssf.txt. X% checked. (X of 2927)
 
 ## [2.2.0] - 2025-04-10
 
@@ -33,12 +33,6 @@ For entries fixed by several commits and that have a Discussion/Issue/BYOAC thre
 ## [2.1.0] - 2025-01-16
 
 ### Changed
-
-- Updated Readme to reflect vsync limitations.
-<!--
-Important enough to include?
-Commit #?
--->
 
 - Updated values in ssf.txt. 5.88% checked. (172 of 2923)
 
@@ -99,9 +93,6 @@ Commit #?
 - Added preservation of frame target for current game when restarting (F3) a game. [Commit cf341d6](https://github.com/Jakobud/skipstartupframes/commit/cf341d6dce55d833542c802e82656a85e83431bb).
 
 - Ensure that frameTarget is always set to zero for non-existent or negative pre-existing values. [Commit 3f50fa5](https://github.com/Jakobud/skipstartupframes/commit/3f50fa50592dcd6cdcb00d5fd40e75a1f5cccd05).
-<!--
-Important enough to include?
--->
 
 ### Changed
 
