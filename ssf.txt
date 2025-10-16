@@ -115,7 +115,7 @@ area51mx,287
 arescue,532
 argus,15
 argusg,0
-arkanoid,500
+arkanoid,550
 arkarea,184
 arknoid2,111
 arkretrn,667
@@ -231,7 +231,7 @@ bioship,354
 birdtry,323
 bishi,546
 bjourney,243
-bjtwin,59
+bjtwin,64
 bking,497
 bking2,0
 bking3,38
@@ -408,7 +408,7 @@ cheekyms,561
 cheesech,345
 chelnov,523
 cheyenne,1672
-chiller,0
+chiller,1780
 chimerab,29
 chinagat,308
 chinatwn,263
@@ -491,7 +491,7 @@ crimec,142
 crimfght,251
 crkdown,0
 crospang,174
-crossbow,0
+crossbow,1780
 crshrace,544
 crsword,243
 crush,366
@@ -1654,7 +1654,7 @@ nomnlnd,11
 nost,800
 nouryoku,192
 nova2001,345
-nrallyx,0
+nrallyx,760
 nratechu,208
 nslasher,0
 nspirit,25
@@ -2269,7 +2269,7 @@ sidetrac,9
 silentd,273
 silkroad,614
 silkworm,822
-simpbowl,0
+simpbowl,1760
 simpsons,575
 sindbadm,5
 sinistar,0
