@@ -8,4 +8,9 @@ local ssf = json.parse(io.open(plugin_directory .. '/plugin.json'):read('*a')).p
 -- Set the plugin directory
 ssf.plugin_directory = plugin_directory
 
+-- Print function
+ssf.print = function(message)
+  emu.print_verbose("Skip Startup Frames Plugin: " .. tostring(message))
+end
+
 return ssf

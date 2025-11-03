@@ -1,4 +1,4 @@
-local ssf = require("skipstartupframes/src/skipstartupframes")
+local ssf = require("skipstartupframes/src/ssf")
 
 -- Notifiers
 local startNotifier = nil

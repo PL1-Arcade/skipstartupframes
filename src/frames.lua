@@ -1,4 +1,4 @@
-local ssf = require('skipstartupframes/src/skipstartupframes')
+local ssf = require('skipstartupframes/src/ssf')
 
 local default_frames_file = ssf.plugin_directory .. "/ssf.txt"
 local custom_frames_file = ssf.plugin_directory .. "/ssf_custom.txt"

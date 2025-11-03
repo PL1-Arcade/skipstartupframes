@@ -1,4 +1,4 @@
-local ssf = require('skipstartupframes/src/skipstartupframes')
+local ssf = require('skipstartupframes/src/ssf')
 local inifile = require('freeplay/lib/inifile')
 
 -- config.ini file path

@@ -1,4 +1,4 @@
-local ssf = require('skipstartupframes/src/skipstartupframes')
+local ssf = require('skipstartupframes/src/ssf')
 
 -- Default menu selection index
 local menuSelection = 3
