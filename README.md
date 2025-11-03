@@ -17,14 +17,17 @@ The plugin temporarily unthrottles :fast_forward: the framerate of a game at sta
 1. :arrow_down_small: Download `skipstartupframes.zip` from the [latest release](https://github.com/Jakobud/skipstartupframes/releases)
 2. :open_file_folder: Unzip the file into the MAME `plugins` directory
    - Example: `c:\mame\plugins\skipstartupframes\`
-3. :point_right: Enable the plugin in one of the following ways:
 
-   - Enable `Skip Startup Frames` in MAME's Plugin Menu (Restarting MAME may be required)
-   - Add `skipstartupframes` to the `plugin` option in `mame.ini`
-   - Enable `skipstartupframes` in `plugin.ini`
-   - Run MAME with the command-line option `-plugin skipstartupframes`
+:+1: The plugin will automatically be enabled when you start MAME.
 
-   ![MAME plugin toggle menu](media/plugin-menu.jpg)
+If necessary you can enable the plugin one of the following ways:
+
+- Enable `Skip Startup Frames` in MAME's Plugin Menu (Restarting MAME may be required)
+- Add `skipstartupframes` to the `plugin` option in `mame.ini`
+- Add `skipstartupframes 1` to `plugin.ini`
+- Run MAME with the command-line option `-plugin skipstartupframes`
+
+![MAME plugin toggle menu](media/plugin-menu.jpg)
 
 ## :heavy_check_mark: Requirements
 
