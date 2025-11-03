@@ -3,6 +3,7 @@ local ssf = require("skipstartupframes/src/ssf")
 -- Notifiers
 local startNotifier = nil
 local stopNotifier = nil
+local frameNotifier = nil
 local menuNotifier = nil
 
 local slow_motion_rate = 0.3
@@ -59,7 +60,7 @@ function ssf:startplugin()
     end
 
     -- If there is no frame target and you are not debugging, don"t do anything
-    if target == 0 and not self.options:get("debug") then
+    if target == 0 and not self.config:get("debug") then
       return
     end
 
@@ -145,7 +146,7 @@ function ssf:startplugin()
 
   end
 
-  -- Run when MAME stops emulation or a hard reset occurs
+  -- Run when MAME stop s emulation or a hard reset occurs
   local stop = function()
     -- Reset the frame processing function
     process_frame = function() end
@@ -167,22 +168,39 @@ function ssf:startplugin()
     return self:menu_populate(rom)
   end
 
-  -- MAME 0.254 and newer compatibility check
+  -- Register start/stop notifiers
   if emu.add_machine_reset_notifier ~= nil and emu.add_machine_stop_notifier ~= nil then
-
+    -- Modern MAME notifier (0.254 and newer)
     startNotifier = emu.add_machine_reset_notifier(start)
     stopNotifier = emu.add_machine_stop_notifier(stop)
-    menuNotifier = emu.register_menu(menu_callback, menu_populate, _p("plugin-skipstartupframes", "Skip Startup Frames"))
 
-    -- Function to process each frame
-    emu.register_frame_done(function()
-      process_frame()
-    end)
+  elseif emu.register_start ~= nil and emu.register_stop ~= nil then
+    -- Backwards compatibility notifier
+    emu.register_start(start)
+    emu.register_stop(stop)
 
   else
-    -- MAME version not compatible (probably can"t even load LUA plugins anyways)
-    print("Skip Startup Frames plugin requires at least MAME 0.254")
+    print("Skip Startup Frames plugin requires a newer version of MAME")
     return
+  end
+
+  -- Register frame done notifier that processes each frame
+  if emu.add_machine_frame_notifier ~= nil then
+    -- Modern MAME notifier (0.254 and newer)
+    frameNotifier = emu.add_machine_frame_notifier(function() process_frame() end)
+
+  elseif emu.register_frame_done ~= nil then
+    -- Backwards compatibility
+    emu.register_frame_done(function() process_frame() end)
+
+  else
+    print("Skip Startup Frames plugin requires a newer version of MAME")
+    return
+  end
+
+  -- Custom plugin menu registration
+  if emu.register_menu ~= nil then
+    menuNotifier = emu.register_menu(menu_callback, menu_populate, _p("plugin-skipstartupframes", "Skip Startup Frames"))
   end
 
 end
