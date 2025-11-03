@@ -1,7 +1,7 @@
 {
   "plugin": {
     "name": "skipstartupframes",
-    "description": "Skip Startup Frames",
+    "description": "Skip Startup Frames plugin",
     "version": "1.0.0",
     "author": "Jake Wilson",
     "type": "plugin",
