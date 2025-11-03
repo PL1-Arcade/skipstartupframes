@@ -70,7 +70,7 @@ function frames:load(rom)
   end
 
   -- Determine if parent ROM fallback is enabled
-  local parent_fallback = ssf.options:get('parent_fallback')
+  local parent_fallback = ssf.config:get('parent_fallback')
 
   -- Determine which target frames to use
   if self.custom[rom] then

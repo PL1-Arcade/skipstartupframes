@@ -1,6 +1,6 @@
 local ssf = require('skipstartupframes/src/skipstartupframes')
 
-require('skipstartupframes/src/options')
+require('skipstartupframes/src/config')
 require('skipstartupframes/src/frames')
 require('skipstartupframes/src/menu')
 require('skipstartupframes/src/startplugin')

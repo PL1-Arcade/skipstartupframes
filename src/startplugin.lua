@@ -32,7 +32,7 @@ function ssf:startplugin()
       return
     end
 
-    self.started_in_debug = self.options:get("debug")
+    self.started_in_debug = self.config:get("debug")
 
     -- Soft reset detected
     if running then
@@ -69,18 +69,18 @@ function ssf:startplugin()
     local frame = 0
 
     -- Debug mode
-    if self.options:get("debug") then
+    if self.config:get("debug") then
       -- Process each frame
       process_frame = function()
         -- Slow-Motion Debug Mode
-        if self.options:get("debug") and self.options:get("debug_slow_motion") then
+        if self.config:get("debug") and self.config:get("debug_slow_motion") then
           video.throttle_rate = slow_motion_rate
         else
           video.throttle_rate = 1
         end
 
         -- Draw debug frame text
-        if self.options:get("debug") and screens_exist then
+        if self.config:get("debug") and screens_exist then
           for _,screen in pairs(screens) do
             screen:draw_text(0, 0, "ROM: "..rom.." Frame: "..frame, 0xffffffff, 0xff000000)
           end
@@ -99,7 +99,7 @@ function ssf:startplugin()
       video.throttled = false
 
       -- Mute sound
-      if self.options:get("mute") then
+      if self.config:get("mute") then
         sound.system_mute = true
       end
 
@@ -107,7 +107,7 @@ function ssf:startplugin()
       process_frame = function()
 
         -- Black out screen
-        if self.options:get("blackout") and screens_exist then
+        if self.config:get("blackout") and screens_exist then
           for _,screen in pairs(screens) do
             screen:draw_box(0, 0, screen.width, screen.height, 0x00000000, 0xff000000)
           end

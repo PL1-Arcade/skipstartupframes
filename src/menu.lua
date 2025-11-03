@@ -13,13 +13,13 @@ function ssf:menu_populate(rom)
 
   table.insert(result, { '---', '', '' })
 
-  table.insert(result, {_p("plugin-skipstartupframes", "Black out screen during startup"), self.options:get('blackout') and 'Yes' or 'No', 'lr' })
+  table.insert(result, {_p("plugin-skipstartupframes", "Black out screen during startup"), self.config:get('blackout') and 'Yes' or 'No', 'lr' })
   indices.blackout = #result
 
-  table.insert(result, { _p("plugin-skipstartupframes", "Mute audio during startup"), self.options:get('mute') and 'Yes' or 'No', 'lr' })
+  table.insert(result, { _p("plugin-skipstartupframes", "Mute audio during startup"), self.config:get('mute') and 'Yes' or 'No', 'lr' })
   indices.mute = #result
 
-  table.insert(result, { _p("plugin-skipstartupframes", "Fallback to parent rom frames"), self.options:get('parent_fallback') and 'Yes' or 'No', 'lr' })
+  table.insert(result, { _p("plugin-skipstartupframes", "Fallback to parent rom frames"), self.config:get('parent_fallback') and 'Yes' or 'No', 'lr' })
   indices.parent_fallback = #result
 
   local debug_title = "Debug Mode"
@@ -27,10 +27,10 @@ function ssf:menu_populate(rom)
     debug_title = debug_title .. " (requires reset)"
   end
 
-  table.insert(result, { _p("plugin-skipstartupframes", debug_title), self.options:get('debug') and 'Yes' or 'No', 'lr' })
+  table.insert(result, { _p("plugin-skipstartupframes", debug_title), self.config:get('debug') and 'Yes' or 'No', 'lr' })
   indices.debug = #result
 
-  table.insert(result, { _p("plugin-skipstartupframes", "Slow Motion during Debug Mode"), self.options:get('debug_slow_motion') and 'Yes' or 'No', 'lr' })
+  table.insert(result, { _p("plugin-skipstartupframes", "Slow Motion during Debug Mode"), self.config:get('debug_slow_motion') and 'Yes' or 'No', 'lr' })
   indices.debug_slow_motion = #result
 
   table.insert(result, { '---', '', '' })
@@ -62,35 +62,35 @@ function ssf:menu_callback(index, event)
   -- Blackout Screen Option
   if index == indices.blackout then
     if event == 'left' or event == 'right' then
-      self.options:toggle('blackout')
+      self.config:toggle('blackout')
     end
     return true
 
   -- Mute Audio Option
   elseif index == indices.mute then
     if event == 'left' or event == 'right' then
-      self.options:toggle('mute')
+      self.config:toggle('mute')
     end
     return true
 
   -- Parent ROM Fallback Option
   elseif index == indices.parent_fallback then
     if event == 'left' or event == 'right' then
-      self.options:toggle('parent_fallback')
+      self.config:toggle('parent_fallback')
     end
     return true
 
   -- Debug Mode Option
   elseif index == indices.debug then
     if event == 'left' or event == 'right' then
-      self.options:toggle('debug')
+      self.config:toggle('debug')
     end
     return true
 
   -- Debug Slow Motion Option
   elseif index == indices.debug_slow_motion then
     if event == 'left' or event == 'right' then
-      self.options:toggle('debug_slow_motion')
+      self.config:toggle('debug_slow_motion')
     end
     return true
 
