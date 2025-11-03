@@ -43,6 +43,8 @@ function ssf:startplugin()
 
       -- Set the frame target to the reset frame target
       target = self.frames.reset_frame_target
+
+      ssf.print("Soft reset detected. Frame target: " .. target)
     else
       -- Start or Hard reset detected
       running = true
@@ -52,6 +54,8 @@ function ssf:startplugin()
 
       -- Set the frame target to the start frame target
       target = self.frames.start_frame_target
+
+      ssf.print("Start or Hard reset detected. Frame target: " .. target)
     end
 
     -- If there is no frame target and you are not debugging, don"t do anything
@@ -120,6 +124,8 @@ function ssf:startplugin()
 
         -- Frame target reached
         if frame >= target then
+
+          ssf.print("Frame target of " .. target .. " reached")
 
           -- Re-enable throttling
           video.throttled = true

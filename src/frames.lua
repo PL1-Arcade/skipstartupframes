@@ -78,20 +78,29 @@ function frames:load(rom)
     self.start_frame_target = self.custom[rom].start
     self.reset_frame_target = self.custom[rom].reset
 
+    ssf.print("Using custom frames for rom: " .. rom)
+
   elseif parent_fallback and self.custom[parent] then
     -- Use parent ROM custom frames if they exist
     self.start_frame_target = self.custom[parent].start
     self.reset_frame_target = self.custom[parent].reset
+
+    ssf.print("Using parent rom custom frames for rom: " .. rom .. " (parent: " .. parent .. ")")
 
   elseif self.default[rom] then
     -- Use default frames if they exist
     self.start_frame_target = self.default[rom].start
     self.reset_frame_target = self.default[rom].reset
 
+    ssf.print("Using default frames for rom: " .. rom)
+
   elseif parent_fallback and self.default[parent] then
     -- Use parent ROM default frames if they exist
     self.start_frame_target = self.default[parent].start
     self.reset_frame_target = self.default[parent].reset
+
+    ssf.print("Using parent rom default frames for rom: " .. rom .. " (parent: " .. parent .. ")")
+
   end
 
   -- Ensure frame targets are not negative
