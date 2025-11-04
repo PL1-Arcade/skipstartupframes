@@ -9,8 +9,8 @@ local defaults = {
   blackout = true,
   mute = true,
   parent_fallback = true,
-  debug = false,
-  debug_slow_motion = false
+  show_frames = false,
+  slow_motion = false
 }
 
 local configValues = {}
