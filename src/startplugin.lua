@@ -174,7 +174,7 @@ function ssf:startplugin()
     ssf.print("Registering frame notifier")
     emu.register_frame_done(function() process_frame() end)
   else
-    print("Skip Startup Frames plugin requires a newer version of MAME")
+    emu.print_warning("Skip Startup Frames plugin requires a newer version of MAME")
     return
   end
 
@@ -188,7 +188,7 @@ function ssf:startplugin()
     emu.register_start(start)
     emu.register_stop(stop)
   else
-    print("Skip Startup Frames plugin requires a newer version of MAME")
+    emu.print_warning("Skip Startup Frames plugin requires a newer version of MAME")
     return
   end
 
