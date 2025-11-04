@@ -140,7 +140,7 @@ local start = function()
 
 end
 
--- Run when MAME stop s emulation or a hard reset occurs
+-- Run when MAME stops emulation or a hard reset occurs
 local stop = function()
   -- Reset the frame processing function
   process_frame = function() end
@@ -168,31 +168,25 @@ function ssf:startplugin()
     return self:menu_populate(rom)
   end
 
-  -- Register start/stop notifiers
-  if emu.add_machine_reset_notifier ~= nil and emu.add_machine_stop_notifier ~= nil then
-    -- Modern MAME notifier (0.254 and newer)
-    startNotifier = emu.add_machine_reset_notifier(start)
-    stopNotifier = emu.add_machine_stop_notifier(stop)
-
-  elseif emu.register_start ~= nil and emu.register_stop ~= nil then
-    -- Backwards compatibility notifier
-    emu.register_start(start)
-    emu.register_stop(stop)
-
+  -- Register frame done notifier that processes each frame
+  if emu.register_frame_done ~= nil then
+    -- Backwards compatibility
+    ssf.print("Registering frame notifier")
+    emu.register_frame_done(function() process_frame() end)
   else
     print("Skip Startup Frames plugin requires a newer version of MAME")
     return
   end
 
-  -- Register frame done notifier that processes each frame
-  if emu.add_machine_frame_notifier ~= nil then
+  -- Register start/stop notifiers
+  if emu.add_machine_reset_notifier ~= nil and emu.add_machine_stop_notifier ~= nil then
     -- Modern MAME notifier (0.254 and newer)
-    frameNotifier = emu.add_machine_frame_notifier(function() process_frame() end)
-
-  elseif emu.register_frame_done ~= nil then
-    -- Backwards compatibility
-    emu.register_frame_done(function() process_frame() end)
-
+    startNotifier = emu.add_machine_reset_notifier(start)
+    stopNotifier = emu.add_machine_stop_notifier(stop)
+  elseif emu.register_start ~= nil and emu.register_stop ~= nil then
+    -- Backwards compatibility notifier
+    emu.register_start(start)
+    emu.register_stop(stop)
   else
     print("Skip Startup Frames plugin requires a newer version of MAME")
     return
