@@ -1,5 +1,5 @@
 local ssf = require('skipstartupframes/src/ssf')
-local inifile = require('freeplay/lib/inifile')
+local inifile = require('skipstartupframes/lib/inifile')
 
 -- config.ini file path
 local config_file = ssf.plugin_directory .. '/config.ini'
