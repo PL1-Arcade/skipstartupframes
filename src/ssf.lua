@@ -3,7 +3,10 @@ local plugin_directory = manager.plugins['skipstartupframes'].directory
 
 -- Load the plugin metadata
 local json = require('json')
-local ssf = json.parse(io.open(plugin_directory .. '/plugin.json'):read('*a')).plugin
+local plugin_json_file = io.open(plugin_directory .. '/plugin.json', 'r')
+local plugin_json_content = plugin_json_file:read('*a')
+plugin_json_file:close()
+local ssf = json.parse(plugin_json_content).plugin
 
 -- Set the plugin directory
 ssf.plugin_directory = plugin_directory
