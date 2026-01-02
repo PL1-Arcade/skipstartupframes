@@ -88,7 +88,7 @@ aof2,243
 aof3,243
 apache3,537
 apb,572
-apparel,485
+apparel,189
 appoooh,16
 aquajack,123
 aquarium,167
@@ -180,7 +180,7 @@ barricad,17
 barrier,186
 basebal2,237
 bass,0
-batcir,482
+batcir,465
 batman,45
 batmanfr,0
 batrider,1256
@@ -231,7 +231,7 @@ birdtry,323
 bishi,335
 bjourney,243
 bjtwin,64
-bking,497
+bking,4
 bking2,0
 bking3,38
 bkrtmaq,609|116
@@ -466,7 +466,7 @@ cookbib2,37
 coolpool,1367
 cop01,125
 copsnrob,0
-cosmccop,498
+cosmccop,263|249
 cosmica,0
 cosmicg,0
 cosmo,65
@@ -728,7 +728,7 @@ exzisus,392
 eyes,107
 f1dream,121
 f1en,0
-f1gp,489
+f1gp,512
 f1gp2,324
 f1gpstar,133
 f1gpstr2,46
@@ -843,7 +843,7 @@ galxwars,0
 gametngk,182
 gangwars,293
 ganryu,243
-gaplus,480
+gaplus,240
 gardia,18
 garou,243
 garyoret,41
@@ -932,7 +932,7 @@ growl,347
 grudge,553
 gseeker,426
 gslgr94u,474
-gslugrsj,492
+gslugrsj,68|6
 gstrik2,41
 gstriker,1308
 gsword,329
@@ -1227,7 +1227,7 @@ kof98,243
 kof99,243
 koikois2,350
 koinomp,210
-konamigt,475
+konamigt,394|648
 konotako,535
 kopunch,368
 korinai,266
@@ -1241,7 +1241,7 @@ kov,1208
 kram,395
 kroozr,78
 krull,0
-krzybowl,490
+krzybowl,170
 ksayakyu,314
 kungfum,6
 kungfut,1006
@@ -1357,7 +1357,7 @@ maniacsq,445
 manybloc,205
 mappy,790
 marble,130
-marineb,489
+marineb,75
 marinedt,0
 mariner,0
 mario,26
@@ -1392,7 +1392,7 @@ mechatt,380
 medlanes,89
 megab,77
 megadon,320
-megaman,485
+megaman,672
 megaman2,1438
 megatack,228
 megazone,327
@@ -1536,9 +1536,9 @@ mscoutm,236
 msgundam,58
 msh,0
 mshuttle,132
-mshvsf,496
+mshvsf,933
 msisaac,0
-msjiken,484
+msjiken,140
 mslider,391
 mslug,243
 mslug2,243
@@ -1675,11 +1675,11 @@ nss_sten,0
 nstocker,616
 nsub,10|129
 ntopstar,173
-numanath,478
+numanath,464|184
 nunchaku,30
 nvs_machrider,0|2
 nvs_mightybj,12
-nwarr,495
+nwarr,1108
 nycaptor,308
 nyny,211
 offroad,23
@@ -1822,7 +1822,7 @@ pcktgal,3
 pclubys,0
 pdrift,37
 peekaboo,48
-peggle,475
+peggle,203
 penbros,160
 pengo,523
 pepper2,2278
@@ -1960,7 +1960,7 @@ qgh,733
 qix,84
 qjinsei,600
 qmhayaku,163
-qndream,496
+qndream,1064
 qrouka,269
 qsangoku,0
 qtheater,888
@@ -2204,7 +2204,7 @@ sexyparo,808
 sf,794
 sf2,889
 sf2ce,895
-sfa,495
+sfa,966
 sfa2,1045
 sfa3,727
 sfchamp,0
@@ -2263,7 +2263,6 @@ shtrider,18
 shuffle,47
 shufshot,346
 shuuz,297
-sia2650,498
 sichuan2,143
 sidearms,283
 sidepckt,4
@@ -2285,14 +2284,14 @@ skybump,9
 skychut,0
 skydiver,4
 skyfox,0
-skykid,494
+skykid,125
 skykiddx,504
 skylancr,28
 skyraid,217
 skyskipr,2
 skysmash,302
 skysoldr,975
-slammast,488
+slammast,412
 slapfigh,0
 slapshot,393
 slikshot,348
@@ -2407,7 +2406,7 @@ srdmissn,102
 srmp2,0
 srmp3,0
 srmp4,263
-srmp6,477
+srmp6,179
 srmp7,185
 srumbler,291
 ssf2,1004
@@ -2423,7 +2422,7 @@ sslam,170
 ssmissin,37
 ssoldier,790
 ssozumo,4
-sspacaho,488
+sspacaho,28
 sspaceat,21
 sspeedr,0
 sspirits,849
@@ -2459,7 +2458,7 @@ starwars,0
 statriv2,0
 statriv4,3
 stdragon,677
-steeltal,499
+steeltal,258
 stg,0
 stinger,260
 stkclmns,127
@@ -2586,7 +2585,7 @@ terracre,37
 terraf,121
 tetris,379
 tetrisp,569
-tetrisp2,499
+tetrisp2,282
 tfrceac,95
 tgmj,610
 tgtball,59
@@ -2620,6 +2619,7 @@ timesold,862
 timetunl,46
 tinklpit,670|340
 tinstar,62
+tinv2650,4
 titlef,13
 tkmmpzdm,1507
 tkoboxng,6
@@ -2662,7 +2662,7 @@ tp84,442
 tpgolf,243
 trackfld,278
 trally,243
-tranqgun,493
+tranqgun,493|614
 transfrm,439
 travrusa,288
 trckydoc,365
@@ -2761,7 +2761,7 @@ vanilla,163
 vanvan,37
 vaportra,62
 vaportrx,0
-varth,484
+varth,468
 vasara,154
 vasara2,61
 vastar,262
@@ -2888,22 +2888,22 @@ xenophob,76
 xevi3dg,150
 xevious,734
 xexex,650
-xmcota,491
+xmcota,942
 xmen,918
 xmultipl,514
-xmvsf,492
+xmvsf,929
 xorworld,609
 xsleena,109
 xtheball,358
 xxmissio,433
 xybots,470
-xyonix,496
+xyonix,250
 yamagchi,42
 yamato,5|0
-yamyam,485
+yamyam,21
 yard,444
 yarunara,225
-yesnoj,496
+yesnoj,517
 yiear,198
 yosakdon,10
 yosimoto,144
