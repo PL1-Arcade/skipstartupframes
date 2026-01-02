@@ -57,7 +57,7 @@ aircombj,645|547
 airduel,29
 airraid,102
 airwolf,162
-ajax,450
+ajax,338
 akiss,42
 alexkidd,13
 alibaba,0
@@ -148,7 +148,7 @@ atetris,384
 athena,269
 atlantis,3
 atomicp,220
-aurail,452
+aurail,199
 av2mj1bb,7651
 av2mj2rg,7661
 avalnche,136
@@ -344,10 +344,10 @@ burningf,243
 butasan,1027
 bwcasino,0
 bwidow,121
-bwing,467
+bwings,297
 bzone,0
 cabal,7
-cachat,470
+cachat,299
 cadash,141
 cairblad,85
 calibr50,212
@@ -378,7 +378,7 @@ cbtime,9610
 cburnrub,10150
 cbuster,137
 ccasino,51
-ccastles,470
+ccastles,506
 cchasm,6
 cclimber,12
 cclimbr2,341
@@ -520,7 +520,7 @@ cupsoc,1
 curvebal,0
 cutieq,679
 cworld,163
-cworld2j,455
+cworld2j,419
 cybattlr,240
 cyberbal,71
 cyberlip,243
@@ -607,7 +607,7 @@ diggerc,132
 dimahoo,678
 dingo,332
 dino,310
-dinorex,472
+dinorex,289
 dirtfoxj,0
 disco,48
 diverboy,44
@@ -718,7 +718,7 @@ exctscc2,435
 exctsccr,437
 exedexes,25
 exerion,0
-explbrkr,467
+explbrkr,232
 exprraid,269
 extdwnhl,853
 exterm,151
@@ -793,7 +793,7 @@ fnkyfish,0
 foodf,0
 footchmp,209
 forgottn,594
-formatz,455
+formatz,38
 fourtrax,465
 fpoint,325
 freekick,0
@@ -892,7 +892,7 @@ gloc,25
 glpracr,286
 glpracr2,0
 glpracr3,0
-gmgalax,474
+gmgalax,33
 gmissile,0
 gnbarich,645
 gng,500
@@ -904,7 +904,7 @@ goldbug,155
 goldmedl,91
 goldnaxe,370
 golgo13,3122
-gollygho,467
+gollygho,325|79
 gomoku,447
 gondo,20
 goonies,1030
@@ -931,7 +931,7 @@ groundfx,583
 growl,347
 grudge,553
 gseeker,426
-gslgr94u,474
+gslgr94u,52|6
 gslugrsj,68|6
 gstrik2,41
 gstriker,1308
@@ -1352,7 +1352,7 @@ majs101b,385
 majtitl2,1163
 majtitle,408
 malzak,292
-maniach,468
+maniach,146
 maniacsq,445
 manybloc,205
 mappy,790
@@ -1447,7 +1447,7 @@ mj4simai,68
 mjangels,227
 mjcamera,197
 mjcamerb,161
-mjchuuka,454
+mjchuuka,438
 mjclinic,0
 mjderngr,66
 mjdialq2,196
@@ -1742,7 +1742,7 @@ pairsnb,378
 palamed,30
 pandoras,390
 pang,323
-pang3,472
+pang3,458
 pangpoms,220
 panic,27
 panicbom,243
@@ -1923,14 +1923,14 @@ psychos,239
 psyforce,0
 ptblank,223
 ptblank2,48
-puchicar,464
+puchicar,591
 puckman,292
 puckpkmn,38
 pulirula,323
 pulsar,4
 pulstar,243
 punchout,32
-punisher,473
+punisher,461
 punkshot,156
 pururun,192
 pushman,195
@@ -2109,7 +2109,7 @@ royalmah,0
 rpatrolb,157
 rrreveng,998
 rsgun,1197
-rshark,462
+rshark,22
 rthun2,222
 rthunder,158
 rtriv,431
@@ -2505,7 +2505,7 @@ supertnk,0
 supertr2,0
 supertr3,0
 superx,72
-suplup,451
+suplup,189
 suprglob,558
 suprgolf,0
 suprloco,12
@@ -2629,7 +2629,7 @@ tmnt,582
 tmnt2,248
 tndrcade,210
 tnextspc,548
-tnk3,451
+tnk3,687
 tnzs,159
 todruaga,199
 toffy,162
@@ -2896,7 +2896,7 @@ xorworld,609
 xsleena,109
 xtheball,358
 xxmissio,433
-xybots,470
+xybots,34
 xyonix,250
 yamagchi,42
 yamato,5|0
